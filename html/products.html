@@ -24,17 +24,15 @@
               <div class="menu">
         
                 <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
+                <li><a onclick="dostuff()">About</a></li>
         
-                <li class="mainmenu">
-                  <a href="">menu</a>
+                <li class="mainmenu" id="menuMain">
+                  <a onclick="showMenu()">Menu</a>
         
                   <!-- DROPDOWN MENU -->
-                  <ul class="dropdown">
-                    <li><a href="">Breakfast</a></li>
-                    <li><a href="">Lunch</a></li>
-                    <li><a href="">Dinner</a></li>
-                  </ul>
+                  <div id="menuContainer">
+                    
+                  </div>
         
                 </li>
                 <li><a href="">Contact</a></li>
@@ -43,7 +41,20 @@
           </nav>
     </header>
 
-    <main></main>
+    
+  <main>
+
+    <div id="products">
+
+    </div>
+      
+     
+
+    </main>
+
+
+    <script src="../script/code.js"></script>
+    <script src="../script/checkout.js"></script>
 
     <footer>
       <div>
