@@ -1,5 +1,5 @@
 //creating an object and a function that will load when windows load.
-let products = [{
+let products = localStorage.getItem('products') || [{
     id: 1,
     name: "muesli",
     imageUrl: "https://i.postimg.cc/SKTr0vgP/images.jpg",
@@ -179,17 +179,17 @@ window.onload = function (e) {
         }
         document.querySelector("#dinner .dinner").innerHTML = productItems;
     });
+    // store in local storage
+    localStorage.setItem("products", JSON.stringify(products));
 
 
 
     //https://www.w3schools.com/jsref/prop_win_localstorage.asp
-    // store in local storage
-    //localStorage.setItem("products", productItems);
 
     // get from local storage
     //let fromLocal = localStorage.getItem("products");
 
-    // document.getElementById("products").innerHTML = productItems ;
+   
 
 }
 let showMenuItem = false;
@@ -209,8 +209,7 @@ function showMenu() {
 }
 
 
-// cart icon
-//https://cdn-icons-png.flaticon.com/512/3144/3144456.png
+
 var myIndex = 0;
 carousel();
 
