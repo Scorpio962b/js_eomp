@@ -40,12 +40,10 @@
     background-color: #4169e1;
     border-radius: 5px;
     transition: 0.3s ease;
-}
-
-.menu li {
     padding: 5px 10px;
     display: inline-block;
 }
+
 
 /* main */
 main{
@@ -98,6 +96,11 @@ input[type=checkbox] {
     user-select: none;
 }
 
+main{
+    justify-content: center;
+    display: flex;
+    
+}
 
 
 
