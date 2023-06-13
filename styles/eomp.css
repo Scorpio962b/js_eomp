@@ -8,6 +8,9 @@
    
   }
 
+  body{
+    align-items: center;
+  }
 /* NAVBAR STYLING STARTS */
 .navbar {
     display: flex;
