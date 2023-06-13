@@ -133,27 +133,23 @@ window.onload = function (e) {
     products.forEach((product) => {
         if (product.catogary == "breakfast") {
             productItems += `  
-    <div class="container
-    ">
-     <div class="card">
-      <img src="`+ product.imageUrl + `" alt="" width="250px" height="250px">
-       <div class="card-body">
-        <h5>`+ product.name + `</h5>
-        <p> R `+ product.price + `</p>
-        <button class="btn">Add to card</button>
-       </div>
-     </div>
-    </div>`;
+            <div class="card">
+            <img src="`+ product.imageUrl + `" alt="" width="250px" height="250px">
+            <div class="card-body">
+                <h5>`+ product.name + `</h5>
+                <p> R `+ product.price + `</p>
+                <button class="btn">Add to card</button>
+            </div>
+            </div>
+            `;
         }
-        document.getElementById("breakfast").innerHTML = productItems;
+        document.querySelector("#breakfast .breakfast").innerHTML = productItems;
     });
 
     productItems = '';
     products.forEach((product) => {
         if (product.catogary == "lunch") {
             productItems += `  
-        <div class="container
-        ">
          <div class="card">
           <img src="`+ product.imageUrl + `" alt="" width="250px" height="250px">
            <div class="card-body">
@@ -161,10 +157,9 @@ window.onload = function (e) {
             <p> R `+ product.price + `</p>
             <button class="btn">Add to card</button>
            </div>
-         </div>
-        </div>`;
+         </div>`;
         }
-        document.getElementById("lunch").innerHTML = productItems;
+        document.querySelector('#lunch .lunch').innerHTML = productItems;
     });
 
 
@@ -173,8 +168,6 @@ window.onload = function (e) {
     products.forEach((product) => {
         if (product.catogary == "dinner") {
             productItems += `  
-        <div class="container
-        ">
          <div class="card">
           <img src="`+ product.imageUrl + `" alt="" width="250px" height="250px">
            <div class="card-body">
@@ -182,10 +175,9 @@ window.onload = function (e) {
             <p> R `+ product.price + `</p>
             <button class="btn">Add to card</button>
            </div>
-         </div>
         </div>`;
         }
-        document.getElementById("dinner").innerHTML = productItems;
+        document.querySelector("#dinner .dinner").innerHTML = productItems;
     });
 
 
