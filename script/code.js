@@ -233,3 +233,12 @@ function carousel() {
     x[myIndex - 1].style.display = "block";
     setTimeout(carousel, 9000);
 }
+
+
+
+
+function dostuff() {
+    let myProducts = JSON.parse(localStorage.getItem("products"));
+    console.log(myProducts);
+    alert(myProducts[0].name);
+}
