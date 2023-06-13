@@ -149,8 +149,7 @@ window.onload = function (e) {
     productItems = '';
     products.forEach((product) => {
         if (product.catogary == "lunch") {
-            productItems += `  
-         <div class="card">
+            productItems += ` 
           <img src="`+ product.imageUrl + `" alt="" width="250px" height="250px">
            <div class="card-body">
             <h5>`+ product.name + `</h5>
