@@ -75,13 +75,7 @@ main{
     text-align: center;
 }
 
-/* .mainmenu li:hover {
-    background-color: #4c9e9e;
-}
 
-.mainmenu:hover .dropdown {
-    display: block;
-} */
 
 .mainmenu li {
     background-color: #4169e1;
@@ -108,12 +102,7 @@ input[type=checkbox] {
 
 /* footer start */
 footer {
-    /* min-height: 30vh;
-    bottom: -50px;
-    left:0;
-    width:100%;
-    background-color: #FFE5B4;
-    position: relative; */
+
     clear: both;
     height: 10rem;
    
