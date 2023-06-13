@@ -27,7 +27,11 @@
           <!-- NAVIGATION MENUS -->
           <div class="menu">
             <li><a href="./index.html">Home</a></li>
+<<<<<<< HEAD
             <li><a href="./html/about.html" onclick="dostuff()" >About</a></li>
+=======
+            <li><a href="./html/about.html" >About</a></li>
+>>>>>>> d0311ed0ad0b0fc4ae2a4193c8f2de09c1e69ed4
 
             <li class="mainmenu" id="menuMain" >
               <a onclick="showMenu() ">Menu</a>
@@ -50,7 +54,7 @@
         <img class="mySlides w3-animate-fading" src="https://i.postimg.cc/jdXysKxC/restaurants-sirocco.jpg" style="width:100%">
         <img class="mySlides w3-animate-fading" src="https://i.postimg.cc/CMcpqP45/Untitled-design-2022-07-21-T162550-066-1170x614.jpg" style="width:100%">
       </div>
-  
+
 
 <script src="./script/code.js"></script>
     </main>
@@ -84,5 +88,25 @@
         </div>
       </div>
     </footer>
+    <script>
+      var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {
+    myIndex = 1;
+  }
+  x[myIndex - 1].style.display = "block";
+  setTimeout(carousel, 9000);
+}
+    </script>
+
+
   </body>
 </html>
