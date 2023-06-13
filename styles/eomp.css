@@ -12,7 +12,13 @@ body{
 background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+
+  body{
+    align-items: center;
+  }
+
 }
+
 /* NAVBAR STYLING STARTS */
 .navbar {
     display: flex;
@@ -135,37 +141,34 @@ footer {
     text-align: right;
     
 }
-/* footer end  */
-/* card */
-/* #products {
-    width: 200px;
-    text-align: center;
-   /
-    flex-direction: column; */
 
-    
-
+#breakfast .breakfast, #lunch .lunch, #dinner .dinner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
 .card {
-    
+    grid-column: span 1;
     background-color: #4169e1;
     margin: 20px;
     border-radius: 30px;
+
+    width:90%;
+=======
     width:30%;
+
     padding: 5px;
     overflow: hidden;
-    float: right;
+    
     text-align: center;
+
+
    
 
-    /* display;
-    padding: 5px;
-    max-width: 100%;
-    /* margin: 30px; */
-    /* border-radius: 15px;
-    float: right;
-   */
-    
+}
+.card-body {
+    width: 250px;
+    margin: auto;
 }
 
 .btn{
@@ -176,8 +179,8 @@ footer {
 }
 
 
-/* home */
 
+/* home */
 
 
 

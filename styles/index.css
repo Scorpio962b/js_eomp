@@ -100,20 +100,11 @@ input[type=checkbox] {
 
 
 
-
-
-
-
-
-
-
-
-
 /* footer start */
 footer {
 
     clear: both;
-    
+    height: 10rem;
    
   }
 
@@ -129,3 +120,7 @@ footer {
     text-align: right;
     
 }
+
+
+
+

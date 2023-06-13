@@ -14,6 +14,40 @@
   </head>
   <body>
     <header>
+
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo"></div>
+        
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+        
+              <!-- USING CHECKBOX HACK -->
+              <input type="checkbox" id="checkbox_toggle" />
+              <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        
+              <!-- NAVIGATION MENUS -->
+              <div class="menu">
+        
+                <li><a href="../index.html">Home</a></li>
+                <li><a onclick="dostuff()" href="./about.html">About</a></li>
+                
+        
+                <li class="mainmenu" id="menuMain">
+                  <a onclick="showMenu()">Menu</a>
+        
+                  <!-- DROPDOWN MENU -->
+                  <div id="menuContainer">
+                    
+                  </div>
+        
+                </li>
+                <li><a href="./contact.html">Contact</a></li>
+              </div>
+            </ul>
+          </nav> 
+    </header>
+
       <nav class="navbar">
         <!-- LOGO -->
         <div class="logo"></div>
@@ -44,12 +78,22 @@
   <main>
    
       <div id="breakfast">
-        
+        <h2>Breakfast</h2>
+        <div class="breakfast">
+          
+        </div>
       </div>
       <div id="lunch">
+        <h2>Lunch</h2>
+        <div class="lunch">
 
+        </div>
       </div>
       <div id="dinner">
+        <h2>Dinner</h2>
+        <div class="dinner">
+
+        </div>
 
       </div>
    
@@ -68,20 +112,13 @@
       </div>
 
         <div class="times">
-          <h6>Monday</h6>
-          <p>06:00-22:00</p>
-          <h6>Tuesday</h6>
-          <p>06:00-22:00</p>
-          <h6>Wednesday</h6>
-          <p>06:00-22:00</p>
-          <h6>Thursday</h6>
-          <p>06:00-22:00</p>
-          <h6>Friday</h6>
-          <p>06:00-21:00</p>
-          <h6>Saturday</h6>
-          <p>06:00-21:00</p>
-          <h6>Sunday</h6>
-          <p>06:00-21:00</p>
+          <h6>Monday 06:00-22:00</h6>
+          <h6>Tuesday 06:00-22:00</h6>
+          <h6>Wednesday 06:00-22:00</h6>        
+          <h6>Thursday 06:00-22:00</h6>   
+          <h6>Friday 06:00-21:00</h6>   
+          <h6>Saturday 06:00-21:00</h6>
+          <h6>Sunday06:00-21:00</h6>
         </div>
 
         <div class="social-icons">
