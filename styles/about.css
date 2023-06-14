@@ -5,9 +5,7 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
     background-color:#ffe5b4ad ;
-   
   }
-
 /* NAVBAR STYLING STARTS */
 .navbar {
     display: flex;
@@ -104,77 +102,29 @@ input[type=checkbox] {
     user-select: none;
 }
 
-
-
-
-
-
-
-
-
+img{
+    width: 600px;
+    height: 300px;
+}
+.aboutPic {
+    justify-content: left;
+    display: flex;
+    border:700px;
+}
 
 
 
 /* footer start */
 footer {
-    /* min-height: 30vh;
-    bottom: -50px;
-    left:0;
-    width:100%;
-    background-color: #FFE5B4;
-    position: relative; */
-    clear: both;
-    
    
+    clear: both;
   }
-
 .find-us{
     text-align: left;
-
 }
-
 .times {
     text-align: center;
 }
 .social-icons{
     text-align: right;
-    
 }
-
-
-
-
-
-/* .img-slider {
-    position: relative;
-    width: 100%;
-    height: 50%;
-    
-}
-.img-slider .slider-container {
-    position: absolute;
-    width: 300%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    animation: slider 26s infinite;
-}
-.img-slider .slider-container .slide {
-    position: relative;
-    width: 33.33333333%;
-    height: 50%;
-    float: left;
-    overflow: hidden
-}
-.img-slider .slider-container .slide img {
-  /* display: block; */
-  /* width: 100%;
-  height: 30%
-}
-@keyframes slider {
-    0%, 25%, 100%{left: 0}
-    
-    30%, 55%{left: -100%}
-    
-    60%, 85%{left: -200%}
-} */ 
