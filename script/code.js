@@ -242,7 +242,6 @@ let products = [{
 ];
 localStorage.setItem("products", JSON.stringify(products));
 
-
 window.onload = function (e) {
   let productItems = "";
   products.forEach((product) => {
@@ -260,7 +259,7 @@ window.onload = function (e) {
                 <p> R ` +
         product.price +
         `</p>
-                <button class="btn">Add to card</button>
+                <button onclick="addToCart(${product.id})">Add to card</button>
             </div>
             </div>
             `;
@@ -352,7 +351,7 @@ window.onload = function (e) {
             <p> R ` +
         product.price +
         `</p>
-            <button class="btn">Add to card</button>
+            <button onclick="addToCart(${product.id})" >Add to card</button>
            </div>
          </div>`;
     }
@@ -376,7 +375,7 @@ window.onload = function (e) {
             <p> R ` +
         product.price +
         `</p>
-            <button class="btn">Add to card</button>
+            <button onclick="addToCart(${product.id})">Add to card</button>
            </div>
         </div>`;
     }
@@ -408,6 +407,72 @@ function showMenu() {
   } else {
     document.getElementById("menuContainer").innerHTML = "";
   }
+<<<<<<< HEAD
+}
+
+// shopping cart js
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function () {
+  modal.style.display = "block";
+};
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+let cart = [];
+
+function addToCart(productId) {
+  let product = products.find((product) => product.id === productId);
+  // const items = product[key]
+  if (product && !product.quantity) {
+    product.quantity = 1
+    cart.push(product);
+    updateCart();
+  } else if (product && product.quantity >= 1){
+    product.quantity++
+        updateCart();
+  } else {
+    console.log("Product not found");
+  }
+}
+
+function updateCart() {
+  let cartContainer = document.getElementById("cart-container");
+  cartContainer.innerHTML = "";
+
+  cart.forEach((product) => {
+    let cartItem = document.createElement("div");
+    cartItem.innerHTML = `
+      <img src="${product.imageUrl}"/>
+      <span>${product.name}</span>
+        <span>${product.price}</span>
+        <span>QTY: ${product.quantity}</span>
+        `;
+    cartContainer.appendChild(cartItem);
+  });
+}
+
+// displayProducts();
+=======
 
     }
     else {
@@ -442,3 +507,4 @@ function dostuff() {
     alert(myProducts[0].name);
 
 }
+>>>>>>> daf47ef112b4a7223eb1258737d53108528d4261

@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<<<<<<< HEAD
+    <link rel="stylesheet" href="../styles/product.css" />
+=======
     <link rel="stylesheet" href="../styles/eomp.css" />
+>>>>>>> daf47ef112b4a7223eb1258737d53108528d4261
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Samaai's Moonlight Restaurant</title>
     <style>
@@ -14,6 +18,37 @@
   </head>
   <body>
     <header>
+<<<<<<< HEAD
+      <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo"></div>
+
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./html/about.html" " >About</a></li>
+
+            <li class="mainmenu" id="menuMain" >
+              <a onclick="showMenu() ">Menu</a>
+
+              <!-- DROPDOWN MENU -->
+              <div id="menuContainer"></div>
+            </li>
+            <li>
+            <a href="#" id="myBtn"><i class="fa-solid fa-cart-shopping"></i></a>
+          
+          </li>
+           <li><a href="./html/contact.html">Contact</a></li>
+           </div>
+        </ul>
+      </nav>
+=======
 
         <nav class="navbar">
             <!-- LOGO -->
@@ -46,6 +81,7 @@
               </div>
             </ul>
           </nav> 
+>>>>>>> daf47ef112b4a7223eb1258737d53108528d4261
     </header>
 
       <nav class="navbar">
@@ -76,6 +112,24 @@
     </header>
     
   <main>
+
+    
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+   <div id="cart-container">
+
+   </div> 
+  <span class="close">&times;</span>
+  <button>Checkout</button>
+  <button onclick="cartDel()">Remove</button>
+  </div>
+
+</div>
+
    
       <div id="breakfast">
         <h2>Breakfast</h2>
@@ -94,14 +148,12 @@
         <div class="dinner">
 
         </div>
-
       </div>
    
     </main>
 
     <script src="../script/code.js"></script>
-    <script src="../script/checkout.js"></script>
-
+    <script src="https://kit.fontawesome.com/850ca6a355.js" crossorigin="anonymous"></script>
     <footer class="container-fluid">
       <div class="find-us">
         <h5>Address</h5>
