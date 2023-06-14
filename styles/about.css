@@ -5,9 +5,7 @@
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
     background-color:#ffe5b4ad ;
-   
   }
-
 /* NAVBAR STYLING STARTS */
 .navbar {
     display: flex;
@@ -98,29 +96,47 @@ input[type=checkbox] {
     user-select: none;
 }
 
+<<<<<<< HEAD:styles/index.css
+=======
+img{
+    width: 600px;
+    height: 300px;
+}
+.aboutPic {
+    justify-content: left;
+    display: flex;
+    border:700px;
+}
+
+>>>>>>> about:styles/about.css
 
 
 /* footer start */
 footer {
+<<<<<<< HEAD:styles/index.css
 
     clear: both;
     height: 10rem;
+=======
+>>>>>>> about:styles/about.css
    
+    clear: both;
   }
-
 .find-us{
     text-align: left;
-
 }
-
 .times {
     text-align: center;
 }
 .social-icons{
     text-align: right;
+<<<<<<< HEAD:styles/index.css
     
 }
 
 
 
 
+=======
+}
+>>>>>>> about:styles/about.css
