@@ -40,12 +40,10 @@
     background-color: #4169e1;
     border-radius: 5px;
     transition: 0.3s ease;
-}
-
-.menu li {
     padding: 5px 10px;
     display: inline-block;
 }
+
 
 /* main */
 main{
@@ -98,13 +96,32 @@ input[type=checkbox] {
     user-select: none;
 }
 
+main{
+    justify-content: center;
+    display: flex;
+    
+}
+
+
+
+
+
+
+
+
+
 
 
 /* footer start */
 footer {
-
+    /* min-height: 30vh;
+    bottom: -50px;
+    left:0;
+    width:100%;
+    background-color: #FFE5B4;
+    position: relative; */
     clear: both;
-    height: 10rem;
+    
    
   }
 
@@ -120,7 +137,3 @@ footer {
     text-align: right;
     
 }
-
-
-
-

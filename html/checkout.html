@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../styles/checkout.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samaai's Moonlight Restaurant</title>
+    <style>
+      .mySlides {display:none;}
+      </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo"></div>
+
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./html/about.html" onclick="dostuff()" >About</a></li>
+
+            <li class="mainmenu" id="menuMain" >
+              <a onclick="showMenu() ">Menu</a>
+
+              <!-- DROPDOWN MENU -->
+              <div id="menuContainer"></div>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </li>
+            <li><a href="./html/contact.html">Contact</a></li>
+           
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+
+<main>
+    <div class="cart-container">
+        <div class="container">
+            <div>
+                <img src="https://i.postimg.cc/c4Lm6KF7/omlette.jpg" alt="" >
+            </div>
+            <div class="product-name">
+                Product
+            </div>
+            <div class="quantity">
+                Quantity
+            </div>
+            <div class="total">
+                Total
+            </div>
+            <div>
+                <button>checkout</button>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+
+
+    <footer class="container-fluid">
+        <div class="find-us">
+          <h5>Address</h5>
+          <p>129 bumblebee avanue </p>
+          <h5>Contacts us</h5>
+          <p></p>
+          <p></p>
+        </div>
+  
+          <div class="times">
+            <h6>Monday 06:00-22:00</h6>
+            <h6>Tuesday 06:00-22:00</h6>
+            <h6>Wednesday 06:00-22:00</h6>
+            <h6>Thursday 06:00-22:00</h6>
+            <h6>Friday 06:00-21:00</h6>
+            <h6>Saturday 06:00-21:00</h6>
+            <h6>Sunday 06:00-21:00</h6>
+          </div>
+  
+          <div class="social-icons">
+            <h5>follow us</h5>
+            <a href="#"><img src="" alt="Facebook" /></a>
+            <a href="#"><img src="" alt="Twitter" /></a>
+            <a href="#"><img src="" alt="Youtube" /></a>
+            <a href="#"><img src="" alt="Instagram" /></a>
+          </div>
+        </div>
+      </footer>
+
+
+
+      <script src="https://kit.fontawesome.com/850ca6a355.js" crossorigin="anonymous"></script>
+  </body>
+</html>
